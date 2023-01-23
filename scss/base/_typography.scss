@@ -1,0 +1,25 @@
+$body-font-size: 1.5rem; // 15px
+
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('../fonts/big-shoulders-display-bold.eot');
+    src: url('../fonts/big-shoulders-display-bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/big-shoulders-display-bold.woff2') format('woff2'),
+        url('../fonts/big-shoulders-display-bold.woff') format('woff'),
+        url('../fonts/big-shoulders-display-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../fonts/lexend-deca-regular.eot');
+    src: url('../fonts/lexend-deca-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lexend-deca-regular.woff2') format('woff2'),
+        url('../fonts/lexend-deca-regular.woff') format('woff'),
+        url('../fonts/lexend-deca-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
