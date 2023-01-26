@@ -15,6 +15,9 @@ html {
 
 /* Set core body defaults */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }

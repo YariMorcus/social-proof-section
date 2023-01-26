@@ -6,6 +6,8 @@
 @use '../abstracts/variables' as v;
 
 .social-proof {
+    flex: 1;
+
     &__header {
         border: 1px dashed red;
         max-width: 32rem;
