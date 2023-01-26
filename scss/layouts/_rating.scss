@@ -6,11 +6,17 @@
 @use '../abstracts/variables' as v;
 
 .rating {
+    margin-bottom: 4rem;
     border: 1px solid green;
 
     &__label {
         font-family: "League Spartan", sans-serif;
         font-weight: 700;
         font-size: t.$body-font-size;
+        border: 1px solid purple;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
     }
 }

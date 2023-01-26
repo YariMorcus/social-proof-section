@@ -9,19 +9,20 @@
     flex: 1;
 
     &__header {
-        border: 1px dashed red;
         max-width: 32rem;
         margin: 0 auto;
     }
 
     &__intro {
+        margin-bottom: 4rem;
         border: 1px solid green;
     }
 
     &__title {
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
         font-size: 4rem;
         text-align: center;;
+        line-height: 1;
     }
 
     &__synopsis {
