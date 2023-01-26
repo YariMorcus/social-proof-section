@@ -1,0 +1,29 @@
+// Import typography variables
+@use '../base/typography' as t;
+
+// Import mixins and variables
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+.social-proof {
+    &__header {
+        border: 1px dashed red;
+        max-width: 32rem;
+        margin: 0 auto;
+    }
+
+    &__intro {
+        border: 1px solid green;
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+        font-size: 4rem;
+        text-align: center;;
+    }
+
+    &__synopsis {
+        font-family: "League Spartan", sans-serif;
+        font-size: t.$body-font-size;
+    }
+}

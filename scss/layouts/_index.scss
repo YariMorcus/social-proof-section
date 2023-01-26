@@ -1,2 +1,8 @@
-// Forward preview-card file when _index.scss is @used
-@forward 'social-proof-section';
+// Forward rating file when _index.scss is @used
+@forward 'rating';
+
+// Forward review file when _index.scss is @used
+@forward 'review';
+
+// Forward social-proof file when _index.scss is @used
+@forward 'social-proof';

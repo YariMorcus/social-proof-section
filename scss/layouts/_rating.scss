@@ -1,0 +1,16 @@
+// Import typography variables
+@use '../base/typography' as t;
+
+// Import mixins and variables
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+.rating {
+    border: 1px solid green;
+
+    &__label {
+        font-family: "League Spartan", sans-serif;
+        font-weight: 700;
+        font-size: t.$body-font-size;
+    }
+}
