@@ -45,22 +45,22 @@ img {
     }
 }
 
-// .footer {
-//     padding: 0 1.28rem 1.28rem;
-//     font-family: 'Lexend Deca', sans-serif;
-//     font-size: 1.2rem;
-//     text-align: center;
+.footer {
+    padding: 0 1.28rem 1.28rem;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
 
-//     &__link {
-//         color: v.$very-dark-cyan;
+    &__link {
+        color: v.$very-dark-magenta;
 
-//         &:hover {
-//             color: scale-color(v.$very-dark-cyan, $lightness: 10%);
-//         }
+        &:hover {
+            color: scale-color(v.$very-dark-magenta, $lightness: 20%);
+        }
 
-//         &:focus-visible {
-//             outline: 2px solid v.$black;
-//             border-radius: 1px;
-//         }
-//     }
-// }
+        &:focus-visible {
+            outline: 2px solid v.$very-dark-magenta;
+            border-radius: 1px;
+        }
+    }
+}
