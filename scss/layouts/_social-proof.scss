@@ -10,14 +10,9 @@
     flex: 1;
 
     @include m.breakpoint-md() {
-        margin-top: 6rem;
-    }
-
-    @include m.breakpoint-xl() {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 0;
     }
 
     &__header {
@@ -48,10 +43,7 @@
 
         @include m.breakpoint-md() {
             text-align: left;
-        }
-
-        @include m.breakpoint-xl() {
-            font-size: 6rem;
+            font-size:  6rem;
         }
     }
 
