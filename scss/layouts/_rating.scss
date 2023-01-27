@@ -8,7 +8,7 @@
 .rating {
     margin-bottom: 4rem;
 
-    @include m.breakpoint-xl() {
+    @include m.breakpoint-lg() {
         display: flex;
         flex-direction: column;
     }
@@ -21,6 +21,7 @@
         font-size: t.$body-font-size;
         text-align: center;
         background-color: v.$light-grayish-magenta;
+        border-radius: .5rem;
 
         @include m.breakpoint-md() {
             margin-left: auto;
@@ -28,11 +29,14 @@
             max-width: 25rem;
         }
 
-        @include m.breakpoint-xl() {
+        @include m.breakpoint-lg() {
+            margin-left: 0;
             width: 50rem;
+            padding: 1rem 0;
 
             &:nth-child(1) {
                 align-self: flex-start;
+                padding-right: 5rem;
             }
 
             &:nth-child(2) {
@@ -42,6 +46,13 @@
             &:nth-child(3) {
                 align-self: flex-end;
             }
+        }
+
+        @include m.breakpoint-xl() {
+            display: flex;
+            padding-left: 2rem;
+            width: 40rem;
+            max-width: initial;
         }
 
         &::before {
@@ -58,6 +69,11 @@
                 url("../img/icon-star.svg");
             background-repeat: no-repeat;
             background-position: 0, 2.2rem, 4.4rem, 6.6rem, 8.8rem;
+
+            @include m.breakpoint-lg() {
+                display: inline-block;
+                margin: 0 3rem 0 0;
+            }
         }
 
         &:not(:last-child) {
