@@ -45,7 +45,19 @@
         }
 
         &::before {
-
+            content: "";
+            display: block;
+            margin: 0 auto;
+            height: 16px;
+            width: 9.7rem; // ( 17 (width image in px) * 5 (nr. of images) ) + (3 (whitespace in px between images) * 4 (nr. of whitespace) )
+            background-image:
+                url("../img/icon-star.svg"),
+                url("../img/icon-star.svg"),
+                url("../img/icon-star.svg"),
+                url("../img/icon-star.svg"),
+                url("../img/icon-star.svg");
+            background-repeat: no-repeat;
+            background-position: 0, 2rem, 4rem, 6rem, 8rem;
         }
 
         &:not(:last-child) {
