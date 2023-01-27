@@ -32,7 +32,7 @@
         @include m.breakpoint-lg() {
             margin-left: 0;
             width: 50rem;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
 
             &:nth-child(1) {
                 align-self: flex-start;
@@ -71,7 +71,7 @@
 
             @include m.breakpoint-xl() {
                 display: inline-block;
-                margin: 0 3rem 0 0;
+                margin: .4rem 3rem 0 0;
             }
         }
 
