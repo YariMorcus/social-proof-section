@@ -6,31 +6,48 @@
 @use '../abstracts/variables' as v;
 
 .review {
-    border: 1px solid red;
-    margin: 0 auto 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 auto;
     min-width: 80%;
     max-width: 32rem;
+    column-gap: 2rem;
 
-    &__header {
-        display: grid;
-        grid-template-columns: max-content 1fr;
-    }
+    &-card {
+        // border: 1px solid red;
+        margin: 0 auto 2rem;
+        background-color: v.$very-dark-magenta;
 
-    &__header,
-    &__text {
-        border: 1px solid green;
-    }
+        &__header {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+        }
 
-    &__author-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 1rem;
-    }
+        &__header,
+        &__text {
+            // border: 1px solid green;
+        }
 
-    &__author-img {
-        width: 5rem;
-        height: 5rem;
-        border-radius: 100%;
+        &__author-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 1rem;
+        }
+
+        &__author-img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 100%;
+        }
+
+        &__author-name {
+            font-style: normal;
+            color: v.$white;
+        }
+
+        &__author-verified {
+            color: v.$soft-pink;
+        }
     }
 }

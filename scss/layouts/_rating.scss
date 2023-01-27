@@ -7,13 +7,25 @@
 
 .rating {
     margin-bottom: 4rem;
-    border: 1px solid green;
+    // border: 1px solid green;
 
     &__label {
+        position: relative;
+        padding: 1rem 0;
         font-family: "League Spartan", sans-serif;
         font-weight: 700;
         font-size: t.$body-font-size;
+        text-align: center;
         border: 1px solid purple;
+        background-color: v.$light-grayish-magenta;
+
+        @include m.breakpoint-md() {
+            padding: 3rem 0;
+        }
+
+        &::before {
+
+        }
 
         &:not(:last-child) {
             margin-bottom: 2rem;

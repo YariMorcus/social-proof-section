@@ -8,14 +8,24 @@
 .social-proof {
     flex: 1;
 
+    @include m.breakpoint-md() {
+        margin-top: 6rem;
+    }
+
     &__header {
+        min-width: 80%;
         max-width: 32rem;
         margin: 0 auto;
+
+        @include m.breakpoint-md() {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            }
     }
 
     &__intro {
         margin-bottom: 4rem;
-        border: 1px solid green;
+        // border: 1px solid green;
     }
 
     &__title {
@@ -23,6 +33,10 @@
         font-size: 4rem;
         text-align: center;;
         line-height: 1;
+
+        @include m.breakpoint-md() {
+            text-align: left;
+        }
     }
 
     &__synopsis {
