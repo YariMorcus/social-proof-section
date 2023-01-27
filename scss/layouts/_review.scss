@@ -13,41 +13,59 @@
     max-width: 32rem;
     column-gap: 2rem;
 
+    @include m.breakpoint-xl() {
+        min-width: initial;
+        max-width: 105rem;
+    }
+
     &-card {
-        // border: 1px solid red;
         margin: 0 auto 2rem;
+        padding: 3.7rem;
         background-color: v.$very-dark-magenta;
+        border-radius: 0.5rem;
 
         &__header {
             display: grid;
             grid-template-columns: max-content 1fr;
-        }
-
-        &__header,
-        &__text {
-            // border: 1px solid green;
+            margin-bottom: 2.5rem;
         }
 
         &__author-box {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-left: 1rem;
+            padding-left: 2rem;
         }
 
         &__author-img {
-            width: 5rem;
-            height: 5rem;
+            width: 4rem;
+            height: 4rem;
             border-radius: 100%;
+        }
+
+        &__author-name,
+        &__author-verified,
+        &__text {
+            font: 1.5rem "League Spartan", sans-serif;
+        }
+
+        &__author-name,
+        &__text {
+            color: v.$light-grayish-magenta;
+            line-height: 1.5;
         }
 
         &__author-name {
             font-style: normal;
-            color: v.$white;
+            font-weight: 700;
         }
 
         &__author-verified {
             color: v.$soft-pink;
+        }
+
+        &__text {
+            font-weight: 500;
         }
     }
 }

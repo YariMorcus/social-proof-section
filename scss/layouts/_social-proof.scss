@@ -20,19 +20,23 @@
         @include m.breakpoint-md() {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            }
+        }
+
+        @include m.breakpoint-xl() {
+            min-width: initial;
+            max-width: 105rem;
+        }
     }
 
     &__intro {
         margin-bottom: 4rem;
-        // border: 1px solid green;
     }
 
     &__title {
         margin-bottom: 2.5rem;
-        font-size: 4rem;
-        text-align: center;;
-        line-height: 1;
+        font: 700 4rem/1 "League Spartan", sans-serif;
+        color: v.$very-dark-magenta;
+        text-align: center;
 
         @include m.breakpoint-md() {
             text-align: left;
@@ -42,5 +46,6 @@
     &__synopsis {
         font-family: "League Spartan", sans-serif;
         font-size: t.$body-font-size;
+        color: v.$dark-grayish-magenta;
     }
 }
