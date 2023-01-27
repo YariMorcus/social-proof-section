@@ -1,0 +1,82 @@
+// Import typography variables
+@use '../base/typography' as t;
+
+// Import mixins and variables
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+.review {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 auto;
+    min-width: 80%;
+    max-width: 32rem;
+    column-gap: 2rem;
+
+    @include m.breakpoint-xl() {
+        min-width: initial;
+        max-width: 105rem;
+    }
+
+    &-card {
+        position: relative;
+        margin: 0 auto 2rem;
+        padding: 3.7rem;
+        background-color: v.$very-dark-magenta;
+        border-radius: .5rem;
+
+        @include m.breakpoint-lg-1175() {
+            &:nth-child(2) {
+                top: 1.5rem;
+            }
+
+            &:nth-child(3) {
+                top: 3rem;
+            }
+        }
+
+        &__header {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            margin-bottom: 2.5rem;
+        }
+
+        &__author-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 2rem;
+        }
+
+        &__author-img {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 100%;
+        }
+
+        &__author-name,
+        &__author-verified,
+        &__text {
+            font: 1.5rem "League Spartan", sans-serif;
+        }
+
+        &__author-name,
+        &__text {
+            color: v.$light-grayish-magenta;
+            line-height: 1.5;
+        }
+
+        &__author-name {
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        &__author-verified {
+            color: v.$soft-pink;
+        }
+
+        &__text {
+            font-weight: 500;
+        }
+    }
+}

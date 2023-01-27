@@ -3,6 +3,7 @@
     1. Colors
         1.1 Primary
         1.2 Neutral
+    2. Breakpoints
 -------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -21,3 +22,12 @@ $soft-pink:                 hsl(333, 80%, 67%);
 $dark-grayish-magenta:      hsl(303, 10%, 53%);
 $light-grayish-magenta:     hsl(300, 24%, 96%);
 $white:                     hsl(0, 0%, 100%);
+
+/*------------------------------------------------------------------
+2. Breakpoints
+*/
+
+$breakpoint-md:             768px;
+$breakpoint-lg:             991px;
+$breakpoint-lg-1175:        1175px;
+$breakpoint-xl:             1280px;

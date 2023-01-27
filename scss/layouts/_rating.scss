@@ -1,0 +1,82 @@
+// Import typography variables
+@use '../base/typography' as t;
+
+// Import mixins and variables
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+.rating {
+    margin-bottom: 4rem;
+
+    @include m.breakpoint-lg() {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        position: relative;
+        padding: 1.5rem 0;
+        font-family: "League Spartan", sans-serif;
+        font-weight: 700;
+        font-size: t.$body-font-size;
+        text-align: center;
+        background-color: v.$light-grayish-magenta;
+        border-radius: .5rem;
+
+        @include m.breakpoint-md() {
+            margin-left: auto;
+            padding: 3rem 0;
+            max-width: 25rem;
+        }
+
+        @include m.breakpoint-lg() {
+            margin-left: 0;
+            width: 50rem;
+            padding: 1.5rem 0;
+
+            &:nth-child(1) {
+                align-self: flex-start;
+            }
+
+            &:nth-child(2) {
+                align-self: center;
+            }
+
+            &:nth-child(3) {
+                align-self: flex-end;
+            }
+        }
+
+        @include m.breakpoint-xl() {
+            display: flex;
+            padding-left: 2rem;
+            width: 40rem;
+            max-width: initial;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            margin: 0 auto 1.5rem;
+            height: 16px;
+            width: 10.5rem; // ( 17 (width image in px) * 5 (nr. of images) ) + (3 (whitespace in px between images) * 4 (nr. of whitespace) )
+            background-image:
+                url("../img/icon-star.svg"),
+                url("../img/icon-star.svg"),
+                url("../img/icon-star.svg"),
+                url("../img/icon-star.svg"),
+                url("../img/icon-star.svg");
+            background-repeat: no-repeat;
+            background-position: 0, 2.2rem, 4.4rem, 6.6rem, 8.8rem;
+
+            @include m.breakpoint-xl() {
+                display: inline-block;
+                margin: .4rem 3rem 0 0;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+}

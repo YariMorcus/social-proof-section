@@ -1,6 +1,30 @@
+// Import variables
+@use 'variables' as v;
+
 // > 768px
 @mixin breakpoint-md() {
-    @media (min-width: 768px) {
+    @media (min-width: v.$breakpoint-md) {
+        @content;
+    }
+}
+
+// > 991
+@mixin breakpoint-lg() {
+    @media (min-width: v.$breakpoint-lg) {
+        @content;
+    }
+}
+
+// > 1175
+@mixin breakpoint-lg-1175() {
+    @media (min-width: v.$breakpoint-lg-1175) {
+        @content;
+    }
+}
+
+// > 1280
+@mixin breakpoint-xl() {
+    @media (min-width: v.$breakpoint-xl) {
         @content;
     }
 }
