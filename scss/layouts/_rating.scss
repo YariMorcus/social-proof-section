@@ -7,7 +7,11 @@
 
 .rating {
     margin-bottom: 4rem;
-    // border: 1px solid green;
+
+    @include m.breakpoint-xl() {
+        display: flex;
+        flex-direction: column;
+    }
 
     &__label {
         position: relative;
@@ -19,8 +23,25 @@
         border: 1px solid purple;
         background-color: v.$light-grayish-magenta;
 
+
         @include m.breakpoint-md() {
             padding: 3rem 0;
+        }
+
+        @include m.breakpoint-xl() {
+            width: 50rem;
+
+            &:nth-child(1) {
+                align-self: flex-start;
+            }
+
+            &:nth-child(2) {
+                align-self: center;
+            }
+
+            &:nth-child(3) {
+                align-self: flex-end;
+            }
         }
 
         &::before {

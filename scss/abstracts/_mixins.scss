@@ -4,3 +4,10 @@
         @content;
     }
 }
+
+// > 1280
+@mixin breakpoint-xl() {
+    @media (min-width: 80rem) {
+        @content;
+    }
+}
