@@ -19,10 +19,21 @@
     }
 
     &-card {
+        position: relative;
         margin: 0 auto 2rem;
         padding: 3.7rem;
         background-color: v.$very-dark-magenta;
         border-radius: .5rem;
+
+        @include m.breakpoint-lg-1175() {
+            &:nth-child(2) {
+                top: 1.5rem;
+            }
+
+            &:nth-child(3) {
+                top: 3rem;
+            }
+        }
 
         &__header {
             display: grid;
