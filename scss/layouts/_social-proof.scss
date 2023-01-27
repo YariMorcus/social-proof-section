@@ -6,10 +6,18 @@
 @use '../abstracts/variables' as v;
 
 .social-proof {
+    margin-top: 8rem;
     flex: 1;
 
     @include m.breakpoint-md() {
         margin-top: 6rem;
+    }
+
+    @include m.breakpoint-xl() {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
     }
 
     &__header {
@@ -41,11 +49,19 @@
         @include m.breakpoint-md() {
             text-align: left;
         }
+
+        @include m.breakpoint-xl() {
+            font-size: 6rem;
+        }
     }
 
     &__synopsis {
         font-family: "League Spartan", sans-serif;
         font-size: t.$body-font-size;
         color: v.$dark-grayish-magenta;
+
+        @include m.breakpoint-xl() {
+            max-width: 45rem;
+        }
     }
 }
