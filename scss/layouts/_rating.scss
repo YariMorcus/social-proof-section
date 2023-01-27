@@ -36,7 +36,6 @@
 
             &:nth-child(1) {
                 align-self: flex-start;
-                padding-right: 5rem;
             }
 
             &:nth-child(2) {
@@ -70,7 +69,7 @@
             background-repeat: no-repeat;
             background-position: 0, 2.2rem, 4.4rem, 6.6rem, 8.8rem;
 
-            @include m.breakpoint-lg() {
+            @include m.breakpoint-xl() {
                 display: inline-block;
                 margin: 0 3rem 0 0;
             }
