@@ -48,14 +48,14 @@ img {
 .footer {
     padding: 0 1.28rem 1.28rem;
     font-family: 'League Spartan', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
 
     &__link {
         color: v.$very-dark-magenta;
 
         &:hover {
-            color: scale-color(v.$very-dark-magenta, $lightness: 20%);
+            color: scale-color(v.$very-dark-magenta, $lightness: 30%);
         }
 
         &:focus-visible {
