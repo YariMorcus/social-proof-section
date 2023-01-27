@@ -20,12 +20,12 @@
         font-weight: 700;
         font-size: t.$body-font-size;
         text-align: center;
-        border: 1px solid purple;
         background-color: v.$light-grayish-magenta;
 
-
         @include m.breakpoint-md() {
+            margin-left: auto;
             padding: 3rem 0;
+            max-width: 25rem;
         }
 
         @include m.breakpoint-xl() {
