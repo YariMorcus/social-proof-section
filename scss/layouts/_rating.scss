@@ -16,9 +16,7 @@
     &__label {
         position: relative;
         padding: 1.5rem 0;
-        font-family: "League Spartan", sans-serif;
-        font-weight: 700;
-        font-size: t.$body-font-size;
+        font: 700 t.$body-font-size "League Spartan", sans-serif;
         text-align: center;
         background-color: v.$light-grayish-magenta;
         border-radius: .5rem;
