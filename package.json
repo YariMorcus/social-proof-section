@@ -1,5 +1,5 @@
 {
-  "name": "project-name-here",
+  "name": "Social proof section",
   "description": "Challenge by Frontend Mentor (https://www.frontendmentor.io?ref=challenge)",
   "version": "1.0.0",
   "main": "index.js",
@@ -220,12 +220,12 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/YariMorcus/social-proof-section"
   },
   "author": "Yari Morcus",
   "license": "MIT",
   "bugs": {
     "url": ""
   },
-  "homepage": ""
+  "homepage": "https://yarimorcus.github.io/social-proof-section"
 }
